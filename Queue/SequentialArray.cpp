@@ -15,14 +15,14 @@ public:
 
     void enqueue(int val){
         if(rear == MAX-1){
-            cout<<"Queue is Full";
+            cout<<"Queue is Full\n";
         }
         else {arr[++rear] = val;}
     }
 
     void dequeue(){
         if(rear == front){
-            cout<<"Queue is Empty";
+            cout<<"Queue is Empty\n";
         }
         else{front++;}
     }

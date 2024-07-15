@@ -1,5 +1,4 @@
 //此法用環狀陣列實現，能用的空格為n-1格，以空間換取時間又能利用大部分空間，
-//一開始front,rear都從0開始，是因為front這格為空格不能使用，若從-1開始，第0格會被填充元素導致front不為空格
 
 #include<iostream>
 using namespace std;
@@ -19,7 +18,7 @@ public:
     void enqueue(int val){
         rear = (rear + 1)%MAX;  //以mod運算來實現環狀
         if(rear == front){
-            cout<<"Queue is Full";
+            cout<<"Queue is Full\n";
             if(rear==0){
                 rear = MAX - 1;
             }
@@ -35,7 +34,7 @@ public:
 
     void dequeue(){
         if(rear == front){
-            cout<<"Queue is Empty";
+            cout<<"Queue is Empty\n";
             return;
         }
         else{

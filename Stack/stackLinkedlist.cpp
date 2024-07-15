@@ -28,7 +28,7 @@ public:
 
     void pop(){
         if(top == NULL){
-            cout<<"Stack is Empty";
+            cout<<"Stack is Empty\n";
             return;
         }
         else{
